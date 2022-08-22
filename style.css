@@ -1,11 +1,12 @@
 /* font style */
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 /* common style */
 
 body{
-    font-family: 'Hachi Maru Pop', cursive;
-    background-color: aliceblue;
+    font-family: 'Aboreto', cursive;
+    font-size: 20px;
+    background-color: #FFFFFF;
     margin: 0;
 }
 
@@ -16,6 +17,12 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+.mid-banner{
+    background-image: url(image/shape/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 50px;
+}
 
 header > h1{
     text-align: center;
@@ -25,7 +32,7 @@ header > h1{
     padding-top: 2%;
 }
 
-.header-section{
+.header-section, .main-section{
     display: flex;
 }
 
@@ -38,16 +45,25 @@ header > h1{
 }
 
 .info{
-    padding: 5%;
-    padding-top: 8%;
+    padding: 5% 5% 2% 10%;
+}
+.info2{
+    padding: 5% 5% 2% 0%;
+    line-height: 40px;
+}
+.info > a,.info2 > a{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(orange, #FB6756);
+    padding: 10px 40px;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 .image{
-    padding: 5%;
-    padding-left: 8%;
+    padding: 2% 5% 2% 10%;
 }
 
 .image img{
-    width: 400px;
-    height: 400px;
+    height: 500px;
 }
